@@ -1,0 +1,24 @@
+{
+  "name": "portfolio_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./node_modules/.bin/sass ./src/scss/main.scss ./src/css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewLyko/portfolio_web.git"
+  },
+  "keywords": [],
+  "author": "andriy.lyko@gmail.com",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://github.com/AndrewLyko/portfolio_web/issues"
+  },
+  "homepage": "https://github.com/AndrewLyko/portfolio_web#readme",
+  "devDependencies": {
+    "sass": "^1.41.1"
+  }
+}
