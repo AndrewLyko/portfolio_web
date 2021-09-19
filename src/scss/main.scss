@@ -1,6 +1,7 @@
 @import "../../node_modules/normalize-scss/sass/normalize/import-now";
 
 @import "partials/variables";
+@import "partials/typography";
 
 @import "partials/globals";
 @import "partials/fonts";
@@ -15,3 +16,8 @@
 @import "components/intro";
 @import "components/btn";
 @import "components/cards";
+
+@import "components/list";
+@import "components/case";
+@import "components/social";
+@import "components/commons";

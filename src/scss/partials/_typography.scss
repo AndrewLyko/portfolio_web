@@ -1,0 +1,7 @@
+@mixin hdl($size: 22px, $line-height: 1.2, $weight: "Regular", $color: $dark) {
+  font-size: rem(22px);
+  line-height: $line-height;
+  font-family: "Heebo #{$weight}", sans-serif;
+  color: $color;
+}
+
