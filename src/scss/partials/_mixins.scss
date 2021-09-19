@@ -1,7 +1,7 @@
-@mixin mq($bp:'lg'){
+@mixin mq($bp: 'lg'){
   $bp-value: map-get($breakpoints, $bp);
 
-    @media screen and #{bp-value} {
-      @content;
+  @media screen and #{$bp-value} {
+    @content;
   }
 }
