@@ -540,6 +540,15 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 37.5rem) {
+  .intro {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 }
 .intro .intro__lead {
   display: block;
@@ -547,8 +556,18 @@ html {
 .intro .intro__item {
   width: 100%;
 }
+@media screen and (max-width: 37.5rem) {
+  .intro .intro__item {
+    text-align: center;
+  }
+}
 .intro .intro__item.intro__item--align {
   text-align: right;
+}
+@media screen and (max-width: 37.5rem) {
+  .intro .intro__item.intro__item--align {
+    text-align: center;
+  }
 }
 .intro .intro__hdl {
   font-family: "Heebo Bold", sans-serif;
@@ -556,6 +575,11 @@ html {
   font-size: 2.75rem;
   line-height: 1.4;
   margin-bottom: 1.375rem;
+}
+@media screen and (max-width: 37.5rem) {
+  .intro .intro__hdl {
+    font-size: 2rem;
+  }
 }
 .intro .intro__text {
   font-family: "Heebo Regular", sans-serif;
@@ -571,6 +595,13 @@ html {
   max-height: 15.1875rem;
   border: 0.0625rem solid #000;
   border-radius: 50%;
+  box-shadow: -5px 13px 0 0 #EDF7FA;
+}
+@media screen and (max-width: 37.5rem) {
+  .intro .intro__avatar {
+    max-width: 10.625rem;
+    max-height: 10.625rem;
+  }
 }
 
 .btn {

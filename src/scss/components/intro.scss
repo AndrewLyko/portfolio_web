@@ -3,15 +3,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: rem(15px);
+  padding-bottom: rem(15px);
+  box-sizing: border-box;
+  @media screen and (max-width: rem(600px)){
+  flex-direction: column-reverse;
+  justify-content: center;
+
+}
 
   #{&}__lead{
     display: block;
   }
   #{&}__item {
     width: 100%;
+    @media screen and (max-width: rem(600px)){
+      text-align: center;
+    }
+
 
     &.intro__item--align{
       text-align: right;
+      @media screen and (max-width: rem(600px)){
+        text-align: center;
+      }
     }
   }
 
@@ -21,6 +36,10 @@
     font-size: rem(44px);
     line-height: 1.4;
     margin-bottom: rem(22px);
+    @media screen and (max-width: rem(600px)) {
+      font-size: rem(32px);
+    }
+
   }
 
   #{&}__text {
@@ -38,5 +57,11 @@
     max-height: rem(243px);
     border: rem(1px) solid $black;
     border-radius: 50%;
+    box-shadow: -5px 13px 0 0 $secondary-light;
+    @media screen and (max-width: rem(600px)){
+      max-width: rem(170px);
+      max-height: rem(170px);
+    }
+
   }
 }
