@@ -1,8 +1,8 @@
 $fonts-map: (
-        "Heebo Black": "heebo-black-webfont",
-        "Heebo Bold": "heebo-bold-webfont",
-        "Heebo Medium": "heebo-medium-webfont",
-        "Heebo Regular": "heebo-regular-webfont",
+  "Heebo Black": "heebo-black-webfont",
+  "Heebo Bold": "heebo-bold-webfont",
+  "Heebo Medium": "heebo-medium-webfont",
+  "Heebo Regular": "heebo-regular-webfont",
 );
 
 @each $font-name, $file-name in $fonts-map {

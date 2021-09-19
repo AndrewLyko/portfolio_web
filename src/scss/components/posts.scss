@@ -1,37 +1,35 @@
-.posts{
-  #{&}__header{
+.posts {
+  padding-top: rem(0.1px);
+  padding-bottom: rem(15px);
 
-
-  }
-  #{&}__header--more{
+  #{&}__header--more {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    @include mq('sm') {
+      display: block;
+    }
   }
 
-  #{&}__hdl{
-    font-size: rem(22px);
-    line-height: 1.2;
-    font-family: "Heebo Regular", sans-serif;
-    color: $dark;
+  #{&}__hdl {
+    @include hdl;
+    @include mq('sm') {
+      text-align: center;
+    }
   }
 
-  #{&}__link{
-    font-size: rem(16px);
-    line-height: 1.2;
-    font-family: "Heebo Regular", sans-serif;
-    color: $secondary;
+  #{&}__link {
+    @include paragraph($line-height: 1.2, $color: $secondary);
     text-decoration: none;
+    @include mq('sm') {
+      display: none;
+    }
   }
 
-  #{&}__content{
+  #{&}__content {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
-  }
-
-  #{&}__item{
-
   }
 }

@@ -479,11 +479,10 @@ html {
 }
 .box {
   width: 100%;
+  min-width: 18.75rem;
   box-sizing: border-box;
 }
 .box.box--header {
-  max-width: 53.4375rem;
-  margin: auto;
   display: flex;
   justify-content: flex-end;
 }
@@ -497,16 +496,30 @@ html {
   background-color: #EDF7FA;
 }
 
+.posts {
+  padding-top: 0.00625rem;
+  padding-bottom: 0.9375rem;
+}
 .posts .posts__header--more {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+@media screen and (max-width: 600px) {
+  .posts .posts__header--more {
+    display: block;
+  }
 }
 .posts .posts__hdl {
   font-size: 1.375rem;
   line-height: 1.2;
   font-family: "Heebo Regular", sans-serif;
   color: #21243D;
+}
+@media screen and (max-width: 600px) {
+  .posts .posts__hdl {
+    text-align: center;
+  }
 }
 .posts .posts__link {
   font-size: 1rem;
@@ -515,12 +528,18 @@ html {
   color: #00A8CC;
   text-decoration: none;
 }
+@media screen and (max-width: 600px) {
+  .posts .posts__link {
+    display: none;
+  }
+}
 .posts .posts__content {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
 }
+
 .nav .nav__item {
   font-size: 1.25rem;
   text-decoration: none;
@@ -544,7 +563,7 @@ html {
   padding-bottom: 0.9375rem;
   box-sizing: border-box;
 }
-@media screen and (max-width: 37.5rem) {
+@media screen and (max-width: 600px) {
   .intro {
     flex-direction: column-reverse;
     justify-content: center;
@@ -556,7 +575,7 @@ html {
 .intro .intro__item {
   width: 100%;
 }
-@media screen and (max-width: 37.5rem) {
+@media screen and (max-width: 600px) {
   .intro .intro__item {
     text-align: center;
   }
@@ -564,40 +583,39 @@ html {
 .intro .intro__item.intro__item--align {
   text-align: right;
 }
-@media screen and (max-width: 37.5rem) {
+@media screen and (max-width: 600px) {
   .intro .intro__item.intro__item--align {
     text-align: center;
   }
 }
 .intro .intro__hdl {
-  font-family: "Heebo Bold", sans-serif;
-  color: #21243D;
+  margin-bottom: 1.375rem;
   font-size: 2.75rem;
   line-height: 1.4;
-  margin-bottom: 1.375rem;
+  font-family: "Heebo Bold", sans-serif;
+  color: #21243D;
 }
-@media screen and (max-width: 37.5rem) {
+@media screen and (max-width: 600px) {
   .intro .intro__hdl {
     font-size: 2rem;
   }
 }
 .intro .intro__text {
-  font-family: "Heebo Regular", sans-serif;
-  color: #21243D;
+  margin-bottom: 1.875rem;
   font-size: 1rem;
   line-height: 1.4;
-  margin-bottom: 1.875rem;
+  font-family: "Heebo Regular", sans-serif;
+  color: #21243D;
 }
 .intro .intro__avatar {
   width: 100%;
   height: auto;
   max-width: 15.1875rem;
   max-height: 15.1875rem;
-  border: 0.0625rem solid #000;
-  border-radius: 50%;
   box-shadow: -5px 13px 0 0 #EDF7FA;
+  border-radius: 50%;
 }
-@media screen and (max-width: 37.5rem) {
+@media screen and (max-width: 600px) {
   .intro .intro__avatar {
     max-width: 10.625rem;
     max-height: 10.625rem;
@@ -606,7 +624,7 @@ html {
 
 .btn {
   border: 0;
-  line-height: 2.4;
+  line-height: 2.3;
   font-size: 1.25rem;
   font-family: "Heebo Medium", sans-serif;
   padding: 0.0625rem 1.3125rem;
@@ -633,19 +651,26 @@ html {
   margin-right: 1.25rem;
   margin-bottom: 1.25rem;
 }
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    margin-right: 0;
+  }
+}
 .card:nth-child(even) {
   margin-right: 0;
 }
 .card .card__hdl {
-  font-size: 1.375rem;
+  font-size: 1.625rem;
   line-height: 1.4;
   font-family: "Heebo Bold", sans-serif;
   color: #21243D;
 }
 .card .card__addInfo {
-  font-family: "Heebo Regular", sans-serif;
   font-size: 1.125rem;
   line-height: 1.4;
+  font-family: "Heebo Regular", sans-serif;
+  color: #21243D;
 }
 .card .card__date {
   border-right: 0.0625rem solid #000;
@@ -653,9 +678,10 @@ html {
   margin-right: 1.625rem;
 }
 .card .card__text {
-  font-family: "Heebo Regular", sans-serif;
   font-size: 1rem;
   line-height: 1.4;
+  font-family: "Heebo Regular", sans-serif;
+  color: #21243D;
 }
 
 .list .list__hdl {
@@ -672,14 +698,25 @@ html {
   padding-bottom: 0.9375rem;
   margin-bottom: 1.875rem;
 }
+@media screen and (max-width: 600px) {
+  .case {
+    flex-direction: column;
+  }
+}
 .case .case__img {
   width: 100%;
   max-width: 15.375rem;
   border-radius: 0.375rem;
   margin-right: 0.9375rem;
 }
+@media screen and (max-width: 600px) {
+  .case .case__img {
+    max-width: 100%;
+    margin-bottom: 0.9375rem;
+  }
+}
 .case .case__hdl {
-  font-size: 1.375rem;
+  font-size: 1.875rem;
   line-height: 1.4;
   font-family: "Heebo Bold", sans-serif;
   color: #21243D;

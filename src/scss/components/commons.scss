@@ -1,7 +1,4 @@
 .copyright{
   text-align: center;
-  font-size: rem(14px);
-  line-height: 1.4;
-  font-family: "Heebo Regular", sans-serif;
-  color: $dark;
+  @include paragraph($size: 14px);
 }

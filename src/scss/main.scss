@@ -1,13 +1,13 @@
 @import "../../node_modules/normalize-scss/sass/normalize/import-now";
 
 @import "partials/variables";
-@import "partials/typography";
 
 @import "partials/globals";
 @import "partials/fonts";
 
 @import "partials/functions";
 @import "partials/mixins";
+@import "partials/typography";
 
 @import "partials/layout";
 //components
@@ -16,24 +16,9 @@
 @import "components/nav";
 @import "components/intro";
 @import "components/btn";
-@import "components/cards";
+@import "components/card";
 
 @import "components/list";
 @import "components/case";
 @import "components/social";
 @import "components/commons";
-
-//body {
-//  background: red;
-//  @include mq('lg'){
-//    background: blue;
-//  }
-//
-//  @include mq('md'){
-//    background: yellow;
-//  }
-//
-//  @include mq('sm'){
-//    background: black;
-//  }
-//}

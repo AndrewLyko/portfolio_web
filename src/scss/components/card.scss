@@ -7,19 +7,19 @@
   color: $dark;
   margin-right: rem(20px);
   margin-bottom: rem(20px);
-  &:nth-child(even){
+  @include mq('sm') {
+    width: 100%;
     margin-right: 0;
   }
-
+  &:nth-child(even) {
+    margin-right: 0;
+  }
   #{&}__hdl{
     @include hdl(26px, 1.4, 'Bold');
   }
 
   #{&}__addInfo{
-    font-family: "Heebo Regular", sans-serif;
-    font-size: rem(18px);
-    line-height: 1.4;
-
+    @include paragraph(18px)
   }
 
   #{&}__date{
@@ -27,11 +27,7 @@
     padding-right: rem(32px);
     margin-right: rem(26px);
   }
-
   #{&}__text{
-    font-family: "Heebo Regular", sans-serif;
-    font-size: rem(16px);
-    line-height: 1.4;
+    @include paragraph;
   }
-
 }
