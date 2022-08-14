@@ -6,14 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --config ./webpack.config.js --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "dev": "node ./node_modules/.bin/sass ./src/scss/main.scss ./src/css/styles.css --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndrewLyko/portfolio_web.git"
+    "url": "git+https://github.com/AndrewLyko/portfolio_web"
   },
   "keywords": [],
-  "author": "andriy.lyko@gmail.com",
+  "author": "marian.lyko@gmail.com",
   "license": "Beerware",
   "bugs": {
     "url": "https://github.com/AndrewLyko/portfolio_web/issues"

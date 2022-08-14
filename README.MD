@@ -1,14 +1,17 @@
 # My portfolio website
 
-
 ## How to run?
-```shell
-#Open terminal
-#install dependecies
 
-npm if [  ]; then
-# start development
+```shell
+#open terminal
+#install dependencies
+npm i
+
+#start development
 npm run dev
-fi
+
+# start project
+
+npm start
 
 ```
